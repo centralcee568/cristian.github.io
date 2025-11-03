@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="CSS/style.css"> <!-- Usa ruta local si ambos están en la misma carpeta -->
+</head>
+<body>
+    <header>
+        <h1>BIENVENIDO A MI PAGINA PERSONAL</h1>
+        <nav>
+            <ul>
+                <li><a href="#presentacion">Presentación</a></li>
+                <li><a href="#intereses">Mis intereses</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#musica">Música</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PRESENTACIÓN -->
+    <section id="presentacion" class="card">
+       <h2>Presentacion</h2>
+    <p>¡Hola! Soy <strong>Cristian Alejandro</strong>, me gusta aprender, crear y disfrutar de cada momento. Me gusta mantenerme activo practicando deportes, capturar los mejores instantes a traves de la fotografia y conocer nuevos lugares que amplíen mi forma de ver el mundo.</p>
+    <p>La musica y los videojuegos son parte de mi dia a dia ya que me ayudan a inspirarme, relajarme y disfrutar del tiempo libre.</p>
+    <button class="inicio-btn" onclick="volverArriba()">⬆ Volver al inicio</button>
+    </section>
+
+    <!-- INTERESES -->
+    <section id="intereses" class="card">
+        <h2>Mis intereses</h2>
+        <ul>
+            <li>Deportes</li>
+            <li>Fotografias</li>
+            <li>Viajar</li>
+            <li>Mucica</li>
+            <li>Videojuegos</li>
+        </ul>
+        <button class="inicio-btn" onclick="volverArriba()">⬆ Volver al inicio</button>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="card">
+        <h2>Galería</h2>
+        <div class="galeria">
+            <img src="IMAGENES/BATMAN.jpg" alt="Foto 1">
+            <img src="IMAGENES/GATO.jpg" alt="Foto 2">
+            <img src="IMAGENES/GORILLAZ.jpg" alt="Foto 3">
+            <img src="IMAGENES/PERRO.jpg" alt="Foto 4">
+        </div>
+        <button class="inicio-btn" onclick="volverArriba()">⬆ Volver al inicio</button>
+    </section>
+
+    <!-- CONTADOR (ESPACIO LIBRE PARA TU CÓDIGO FUTURO) -->
+    <section id="contador" class="card">
+        <h2>Contador</h2>
+        <div id="contador-zona">
+            <div id="sfc7cplaxn3qw2zqzhkx6j6byq49anz4lbs"></div><script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=7cplaxn3qw2zqzhkx6j6byq49anz4lbs&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="web counter"><img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=7cplaxn3qw2zqzhkx6j6byq49anz4lbs" border="0" title="web counter" alt="web counter"></a></noscript>
+        </div>
+        <button class="inicio-btn" onclick="volverArriba()">⬆ Volver al inicio</button>
+    </section>
+
+    <!-- VIDEOS -->
+   <section id="video" class="card">
+    <h2>Videos</h2>
+    <div class="videos">
+        <!-- 🎬 Primer video -->
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/KtkysEAR4Rs?si=DxaTFlTU1l2PBrlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- 🎬 Segundo video -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oLeiFvKzBog?si=PnLytYgvP6R-bEZn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <button class="inicio-btn" onclick="volverArriba()">⬆ Volver al inicio</button>
+</section>
+
+    <!-- MÚSICA -->
+   <section id="musica" class="card">
+    <h2>Musica</h2>
+    <div class="videos-musica">
+        <!-- 🎵 Primer video de YouTube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sjAj7iHDDQY?si=njjUBo5o9qk0Ih8T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- 🎵 Segundo video de YouTube -->
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/YVkUvmDQ3HY?si=3PUZQpEXiusLu3ob" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+        <button class="inicio-btn" onclick="volverArriba()">⬆ Volver al inicio</button>
+</section>
+
+    <footer>
+        <p>Contacto. hola123@gmail.com</p>
+        <p>Tel. 0999999999</p>
+    </footer>
+
+    <script>
+        // 🔹 Función para volver al inicio
+        function volverArriba() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }        
+    </script>
+</body>
+</html>

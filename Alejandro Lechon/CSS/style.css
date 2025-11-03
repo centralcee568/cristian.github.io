@@ -1,0 +1,260 @@
+/* ============================================================
+   🌐 CONFIGURACIÓN GENERAL
+   ============================================================ */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #463477;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================================================
+   🟦 CABECERA
+   ============================================================ */
+header {
+    background-color: #7b8283;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* ============================================================
+   🔹 MENÚ DE NAVEGACIÓN
+   ============================================================ */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c00000;
+}
+
+/* ============================================================
+   🧩 SECCIONES GENERALES
+   ============================================================ */
+.card {
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+    margin: 25px auto;
+    padding: 25px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================
+   🧾 TÍTULOS
+   ============================================================ */
+.card h2 {
+    color: #000000;
+    border-bottom: 3px solid #000cb1;
+    padding-bottom: 5px;
+    font-size: 22px;
+}
+
+/* ============================================================
+   📖 TEXTOS
+   ============================================================ */
+.card p, .card li {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* ============================================================
+   🧮 CONTADOR
+   ============================================================ */
+#contador {
+    background-color: #afd9ff;
+    text-align: center;
+     margin-top: 10px;
+}
+
+
+/* ============================================================
+   🎬 SECCIÓN: VIDEOS DE YOUTUBE
+   ============================================================ */
+#video {
+    background-color: #e3f2fd;  /* ← Fondo de la sección */
+    color: #0d47a1;             /* ← Color del título y texto */
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Contenedor de los videos */
+.videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Se ajusta en pantallas pequeñas */
+    gap: 25px;       /* Espacio entre videos */
+    margin-top: 20px;
+}
+
+/* Estilo individual de cada video */
+.videos iframe {
+    width: 400px;              /* Ancho fijo de los videos */
+    height: 225px;             /* Alto fijo */
+    border-radius: 12px;       /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover */
+.videos iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+
+/* ============================================================
+   🖼️ GALERÍA
+   ============================================================ */
+#galeria {
+    background-color: #ffbdbd;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin-top: 15px;
+    overflow-x: auto;
+}
+
+.galeria img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* ============================================================
+   🔙 BOTÓN "VOLVER AL INICIO"
+   ============================================================ */
+.inicio-btn {
+    display: block;
+    margin: 25px auto 0 auto;
+    padding: 10px 20px;
+    background-color: #007f96;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.inicio-btn:hover {
+    background-color: #276672;
+}
+
+/* ============================================================
+   👋 PIE DE PÁGINA
+   ============================================================ */
+footer {
+    text-align: center;
+    background-color: #303036;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 14px;
+}
+/* ============================================================
+   🎵 SECCIÓN: VIDEOS MUSICALES (YouTube)
+   ============================================================ */
+#musica {
+    background-color: #fff3e0;  /* ← Fondo de la sección de música */
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Contenedor de los videos musicales */
+.videos-musica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Se acomoda en pantallas pequeñas */
+    gap: 25px;       /* Espacio entre los videos */
+    margin-top: 20px;
+}
+
+/* Estilo individual de cada video */
+.videos-musica iframe {
+    width: 400px;              /* ← Tamaño de los videos */
+    height: 225px;
+    border-radius: 12px;       /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+.videos-musica iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+/* ============================================================
+   🎵 SECCIÓN: VIDEOS MUSICALES (YouTube)
+   ============================================================ */
+#musica {
+    background-color: #fff3e0;  /* ← Fondo de la sección de música */
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Contenedor de los videos musicales */
+.videos-musica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Se acomoda en pantallas pequeñas */
+    gap: 25px;       /* Espacio entre los videos */
+    margin-top: 20px;
+}
+
+/* Estilo individual de cada video */
+.videos-musica iframe {
+    width: 400px;              /* ← Tamaño de los videos */
+    height: 225px;
+    border-radius: 12px;       /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+.videos-musica iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
